@@ -1,0 +1,25 @@
+
+@mixin btn($pading) {
+    padding: $pading;
+color: #fff;
+background: #C9453B;
+border-radius: 6px;
+border: none;
+cursor: pointer;
+}
+
+@mixin icon ($bg-color, $path) {
+    background-color: $bg-color;
+    background-image: url($path);
+
+}
+
+
+@mixin imgs {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+  margin: 30%;
+  }
+
+  

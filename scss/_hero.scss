@@ -1,0 +1,100 @@
+
+.hero__container {
+    padding-top: 200px;
+    padding-bottom: 240px;
+  }
+  
+  .hero_section {
+    background-image: url(../img/travelanhero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+  
+  .hero__text h1 {
+    max-width: 689px;
+    font-family: "Gelasio";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 120%;
+    /* or 78px */
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .hero__text p {
+    width: 458px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  .hero__text button {
+    padding: 17px 37px;
+    color: #fff;
+    background: #C9453B;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      margin: 0 auto;
+      max-width: 767px;
+    }
+    .hero__imgs {
+      display: none;
+    }
+    .hero__text h1 {
+      width: 305px;
+      font-size: 38px;
+    }
+    .hero__text p {
+      width: 319px;
+    }
+    .hero__text button {
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header__nav-list {
+      gap: 30px;
+    }
+    .box1 {
+      margin-top: 100px;
+      justify-content: center;
+    }
+    .hero__imgs {
+      display: none;
+    }
+    .hero__text {
+      text-align: center;
+    }
+    .hero__text h1 {
+      width: 442px;
+    }
+    .hero__text p {
+      width: 420px;
+    }
+    .hero__text button {
+      margin-top: 30px;
+    }
+    .box2 {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .box2 p {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+    .brends {
+      max-width: 600px;
+    }
+  }
