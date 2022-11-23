@@ -47,8 +47,13 @@ body {
   color: #000;
 }
 
+.header__nav {
+  height: 27px;
+}
+
 .header__nav-list {
   display: flex;
+  align-items: center;
   gap: 60px;
 }
 
@@ -65,12 +70,15 @@ body {
 }
 
 .singin {
-  padding: 14px 35px;
-  color: #fff;
+  padding: 15px 35px;
   background: #C9453B;
   border-radius: 6px;
-  border: none;
   cursor: pointer;
+}
+.singin:hover {
+  background-color: transparent;
+  border: 3px solid #C9453B;
+  color: #000;
 }
 
 .icon {
@@ -90,6 +98,9 @@ body {
   .logo {
     z-index: 10;
   }
+  .logo a {
+    z-index: 10000;
+  }
   .header__nav-list {
     position: absolute;
     background-color: #1F7CFF;
@@ -101,6 +112,7 @@ body {
     flex-direction: column;
     padding-top: 140px;
     transform: translateX(-100%);
+    z-index: 9;
   }
   .header__nav-list-item a {
     color: white;
@@ -108,7 +120,7 @@ body {
   .icon {
     display: block;
   }
-  .fa-2x {
+  .bi {
     display: block;
   }
   .singin {
@@ -116,6 +128,9 @@ body {
   }
   #menu:checked ~ .header__nav .header__nav-list {
     transform: translateX(0);
+  }
+  .header__nav-list {
+    gap: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -159,15 +174,6 @@ body {
   margin-bottom: 40px;
 }
 
-.hero__text button {
-  padding: 17px 37px;
-  color: #fff;
-  background: #C9453B;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
-
 @media (max-width: 767px) {
   .container {
     margin: 0 auto;
@@ -207,9 +213,6 @@ body {
   .hero__text p {
     width: 420px;
   }
-  .hero__text button {
-    margin-top: 30px;
-  }
   .box2 {
     flex-direction: column;
     text-align: center;
@@ -224,6 +227,18 @@ body {
     max-width: 600px;
   }
 }
+.btn {
+  padding: 15px 35px;
+  background: #C9453B;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 3px solid #C9453B;
+  color: #000;
+}
+
 .work__container h2 {
   max-width: 346px;
   height: 60px;
@@ -290,7 +305,7 @@ body {
   opacity: 0.6;
 }
 
-.carusel__container h2 {
+.crusel__container h2 {
   max-width: 346px;
   height: 60px;
   font-family: "Gelasio";
@@ -302,7 +317,7 @@ body {
   margin-top: 140px;
   color: #000000;
 }
-.carusel__container p {
+.crusel__container p {
   margin: 0 auto;
   margin-top: 20px;
   max-width: 700px;
@@ -318,11 +333,11 @@ body {
   opacity: 0.6;
 }
 
-.carusel {
+.crusel {
   width: 265px;
   border-radius: 10px;
 }
-.carusel h4 {
+.crusel h4 {
   margin-top: 25px;
   margin-bottom: 10px;
   width: 170px;
@@ -335,7 +350,7 @@ body {
   /* identical to box height, or 36px */
   color: #000000;
 }
-.carusel p {
+.crusel p {
   margin-left: 0;
   width: 104px;
   height: 24px;
@@ -347,11 +362,11 @@ body {
   color: #000000;
   opacity: 0.6;
 }
-.carusel p b {
+.crusel p b {
   color: #000000;
 }
 
-.div-star {
+.div-stars {
   display: flex;
   gap: 15px;
 }
@@ -444,7 +459,7 @@ body {
 }
 
 /* Fading animation */
-.fade {
+.fades {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -457,7 +472,7 @@ body {
     opacity: 1;
   }
 }
-.carusels {
+.crusels {
   margin-top: 60px;
   display: flex;
   justify-content: center;
@@ -572,7 +587,73 @@ body {
   margin-top: 5px;
 }
 
+@media (max-width: 767px) {
+  .card-left img {
+    max-width: 320px;
+  }
+  .card-left p {
+    max-width: 320px;
+  }
+}
+.fr-cards a {
+  height: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  color: #000000;
+  opacity: 0.3;
+  margin-top: 5px;
+}
+
+.autor {
+  width: 192px;
+  height: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  color: #000000;
+}
+
+.form-pr {
+  max-width: 243px;
+  text-align: left;
+  height: 60px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  /* or 29px */
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.btn-footer {
+  padding: 15px 35px;
+  background: #C9453B;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.btn-footer:hover {
+  background-color: transparent;
+  border: 3px solid #C9453B;
+  color: #000;
+}
+
+.ft-email {
+  padding: 10px 20px;
+}
+
 footer {
+  margin-top: 100px;
   background: rgba(38, 148, 153, 0.04);
 }
 

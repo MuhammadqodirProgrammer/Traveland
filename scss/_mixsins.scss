@@ -1,11 +1,17 @@
 
-@mixin btn($pading) {
-    padding: $pading;
-color: #fff;
+@mixin btn() {
+    padding: 15px 35px;
+// color: #fff;
 background: #C9453B;
 border-radius: 6px;
-border: none;
 cursor: pointer;
+// border: 3px solid #C9453B;
+
+&:hover{
+    background-color: transparent;
+    border: 3px solid #C9453B;
+    color: #000;
+}
 }
 
 @mixin icon ($bg-color, $path) {

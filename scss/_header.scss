@@ -21,9 +21,13 @@
     letter-spacing: 0.06em;
     color: #000;
   }
-  
+  .header__nav{
+
+    height: 27px;
+  }
   .header__nav-list {
     display: flex;
+    align-items: center;
     gap: 60px;
   }
   
@@ -40,12 +44,7 @@
   }
   
   .singin {
-    padding: 14px 35px;
-    color: #fff;
-    background: #C9453B;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
+   @include btn()
   }
   
   .icon {
@@ -65,6 +64,9 @@
     .logo {
       z-index: 10;
     }
+    .logo a{
+      z-index: 10000;
+    }
     .header__nav-list {
       position: absolute;
       background-color: #1F7CFF;
@@ -76,7 +78,7 @@
       flex-direction: column;
       padding-top: 140px;
       transform: translateX(-100%);
-      z-index: 999;
+      z-index: 9;
     }
     .header__nav-list-item a {
       color: white;
@@ -92,6 +94,9 @@
     }
     #menu:checked ~ .header__nav .header__nav-list {
       transform: translateX(0);
+    }
+    .header__nav-list {
+      gap: 30px;
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {

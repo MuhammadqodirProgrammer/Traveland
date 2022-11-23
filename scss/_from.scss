@@ -112,9 +112,61 @@ margin-top: 5px;
 }
 
 @media (max-width:767px){
-
+.card-left{
+    img{
+        max-width: 320px;
+    }
+    p{
+        max-width: 320px;
+    }
+}
     
 }
 @media (min-width:768px) and (max-width:1024px){
    
+}
+.fr-cards a{
+    height: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+    color: #000000;
+    opacity: 0.3;
+    margin-top: 5px;
+}
+.autor{
+    width: 192px;
+    height: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+    color: #000000;
+}
+.form-pr{
+    max-width: 243px;
+    text-align: left;
+height: 60px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+/* or 29px */
+color: #000000;
+opacity: 0.6;
+margin-top: 10px;
+}
+.btn-footer{
+    @include btn();
+    padding: 10px 20px;
+}
+.ft-email{
+
+    padding: 10px 20px;
 }

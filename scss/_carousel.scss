@@ -2,7 +2,7 @@
 
 
 
- .carusel__container{
+ .crusel__container{
     h2{
         max-width: 346px;
         height: 60px;
@@ -34,7 +34,7 @@ opacity: 0.6;
 
 
 
-.carusel{
+.crusel{
     // height: 500px;
     width: 265px;
     border-radius: 10px;
@@ -68,7 +68,7 @@ opacity: 0.6;
         }
     }
 }
-.div-star{
+.div-stars{
     display: flex;
     gap: 15px;
 }
@@ -169,7 +169,7 @@ background: #C9453B;
 }
 
 /* Fading animation */
-.fade {
+.fades {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -179,7 +179,7 @@ background: #C9453B;
   to {opacity: 1}
 }
 
-.carusels{
+.crusels{
     margin-top: 60px;
 
     display: flex;

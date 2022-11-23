@@ -33,14 +33,14 @@
     opacity: 0.6;
     margin-bottom: 40px;
   }
-  .hero__text button {
-    padding: 17px 37px;
-    color: #fff;
-    background: #C9453B;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-  }
+  // .hero__text button {
+  //   padding: 17px 37px;
+  //   color: #fff;
+  //   background: #C9453B;
+  //   border-radius: 6px;
+  //   border: none;
+  //   cursor: pointer;
+  // }
   
   @media (max-width: 767px) {
     .container {
@@ -81,9 +81,9 @@
     .hero__text p {
       width: 420px;
     }
-    .hero__text button {
-      margin-top: 30px;
-    }
+    // .hero__text button {
+    //   margin-top: 30px;
+    // }
     .box2 {
       flex-direction: column;
       text-align: center;
@@ -97,4 +97,7 @@
     .brends {
       max-width: 600px;
     }
+  }
+  .btn{
+    @include btn()
   }
